@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
+    <div id="google_translate_element"></div>
     <div class="container">
         <img src="Polo-Forest-2.jpg" alt="Monument Image" class="monument-image">
         <div class="monument-description">
@@ -73,15 +75,12 @@
     </div>
     
 </script>
-<button class = "invisible">
-    <a href="index (1).html">Translate</a>
-</button>
-<script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 <script>
-function loadGoogleTranslate(){
-new google.translate.TranslateElement("google_element");
-}
+        function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
 </script>
+    
 
     
 </body>
